@@ -1,0 +1,98 @@
+{
+  "_version": "1.76.0",
+  "sap.app": {
+    "id": "my.sapui5.act04.training.act04mvc",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.18.5",
+      "toolsId": "c9d0784f-98b3-4905-9d4f-de8239c82efc"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.139.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "my.sapui5.act04.training.act04mvc.i18n.i18n"
+        }
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "transition": "slide",
+        "type": "View",
+        "viewType": "XML",
+        "path": "my.sapui5.act04.training.act04mvc.view",
+        "async": true,
+        "viewPath": "my.sapui5.act04.training.act04mvc.view"
+      },
+      "routes": [
+        {
+          "name": "Routeview04",
+          "pattern": ":?query:",
+          "target": [
+            "Targetview04"
+          ]
+        }
+      ],
+      "targets": {
+        "Targetview04": {
+          "id": "view04",
+          "name": "view04"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "my.sapui5.act04.training.act04mvc.view.App",
+      "type": "XML",
+      "id": "App",
+      "async": true
+    }
+  }
+}

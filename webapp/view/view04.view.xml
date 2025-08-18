@@ -1,0 +1,6 @@
+<mvc:View controllerName="my.sapui5.act04.training.act04mvc.controller.view04"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    </Page>
+</mvc:View>
