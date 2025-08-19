@@ -9,7 +9,10 @@ sap.ui.define([
         },
 
         onAddItem: function (){
-                this.fnDisplayMsg("Add button pressed");
+                // this.fnDisplayMsg("Add button pressed");
+                var oTextBundle = this.getOwnerComponent().getModel("i18n").getResourceBundle();
+                var sMsg = oTextBundle.getText("addButtonMsg");
+                this.fnDisplayMsg(sMsg);
             },
 
         fnDisplayMsg: function (sMsg){
