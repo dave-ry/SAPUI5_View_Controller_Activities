@@ -4,7 +4,7 @@
     xmlns:f="sap.ui.layout.form"
     xmlns:core="sap.ui.core"
     xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
+    <Page id="page" title="{i18n>title}" floatingFooter="true">
     <VBox id="idVBox" class="sapUiSmallMargin">
         <f:SimpleForm id="idSimpleForm" editable="true" layout="ResponsiveGridLayout" title="Details" labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
             <f:content>
@@ -29,7 +29,14 @@
                 <!-- <Label id="idLblPhone"   text="Mobile Number" visible="false"/> -->
                 <Label id="idLblPhone" text="{i18n>mobileNo}" visible="false"/>
                 <!-- <Input id="idInputPhone" value="" visible="false"/> -->
-                <Label id="idLblCc" text="{i18n>ccNo}" visible="false"/>
+                 <Input id="idInputPhone" value="" visible="false"/>
+
+                 <!-- Additional Credit Card details -->
+                <Label id="idLblcvv"   text="{i18n>ccCVV}" visible="false"/>
+                <Input id="idInputcvv" value="" visible="false"/>                
+                 <!-- Additional Credit Card details -->
+                <!-- <Label id="idLblAddCc"  text="Credit Card No." visible="false"/> -->
+                <!-- <Input id="idInptAddCc" value="" visible="false"/> -->
             </f:content>
         </f:SimpleForm>
 
